@@ -32,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const feathers = document.querySelectorAll('#feathers i');
 
     feathers.forEach((feather, index) => {
-        feather.style.left = `${Math.random() * 50 + 50}%`;
+        let screenWidth = window.innerWidth;
+        feather.style.left = `${Math.random() * (screenWidth < 768 ? 90 : 50) + 5}%`; 
         feather.style.animationDuration = `${Math.random() * 5 + 5}s`;
         feather.style.animationDelay = `${index * 1}s`;
     });
