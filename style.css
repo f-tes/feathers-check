@@ -28,6 +28,8 @@ body {
     white-space: nowrap; /* Prevent text from wrapping */
     text-overflow: ellipsis; /* Add ellipsis for overflowed text */
 }
+
+
 .container {
     text-align: left;
     position: relative;
