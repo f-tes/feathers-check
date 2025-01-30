@@ -7,7 +7,7 @@ async function checkFeathers() {
     }
 
     try {
-        const response = await fetch(`https://script.google.com/macros/s/1tugYjEARN5dGy_lePuRxSDQiZ6trTqM9xbQk1vQoHXM/exec?id=${encodeURIComponent(studentId)}`);
+        const response = await fetch(`https://script.google.com/macros/s/AKfycbzR7tY037YMIx-rxZVF1DEfxAJnAHYbVOoy3PwwHtLkpaBYPrNnM6yXIaYovcNGztNETw/exec?id=${encodeURIComponent(studentId)}`);
         const data = await response.text();
 
         const feathersCountDisplay = document.getElementById('feathers-count');
