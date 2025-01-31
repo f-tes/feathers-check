@@ -137,3 +137,77 @@ h1 {
 @supports (--css: variables) {
     /* Dummy CSS to simulate randomness, update with JS if needed */
 }
+
+
+/* Base styles (for desktops) remain unchanged */
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) { /* Tablet styles */
+    .container {
+        margin-left: 40px; /* Reduce left margin */
+    }
+    h1 {
+        font-size: 3em; /* Smaller heading */
+    }
+    .search-box input {
+        width: 80%; /* Allow input field to shrink */
+    }
+    .feathers-display {
+        width: 80%; /* Reduce width */
+        font-size: 25px;
+        height: auto;
+        padding: 10px;
+        line-height: normal;
+    }
+    #feathers {
+        width: 100%; /* Feathers span full width */
+    }
+    #feathers i {
+        width: 200px; /* Reduce feather size */
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* Mobile styles */
+    body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .container {
+        margin-left: 0;
+        width: 90%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .search-box {
+        flex-direction: column; /* Stack input and button */
+        width: 100%;
+    }
+    .search-box input {
+        width: 100%;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .search-box button {
+        width: 100%;
+        font-size: 1em;
+    }
+    .feathers-display {
+        width: 90%;
+        font-size: 20px;
+        height: auto;
+        padding: 8px;
+    }
+    #feathers {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    #feathers i {
+        width: 150px; /* Further reduce feather size */
+        height: 150px;
+    }
+}
