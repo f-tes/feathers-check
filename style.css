@@ -140,74 +140,77 @@ h1 {
 
 
 /* Base styles (for desktops) remain unchanged */
-
-/* Responsive Styles */
-@media screen and (max-width: 1024px) { /* Tablet styles */
+/* Ensure responsiveness */
+@media (max-width: 1024px) { /* Tablets and smaller screens */
     .container {
-        margin-left: 40px; /* Reduce left margin */
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
     }
+
     h1 {
-        font-size: 3em; /* Smaller heading */
+        font-size: 3em; /* Adjust size */
+        white-space: normal; /* Allow wrapping */
+        text-align: center;
+        margin: 0 auto; /* Center it */
     }
+
+    #typewriter {
+        display: block;
+        text-align: center;
+        border-right: 0.1em solid white; /* Keep blinking effect */
+    }
+
+    .search-box {
+        flex-direction: column; /* Stack input & button */
+        align-items: center;
+    }
+
     .search-box input {
-        width: 80%; /* Allow input field to shrink */
+        width: 80%; /* Adjust width */
+        max-width: 400px; /* Limit size */
+        margin-bottom: 10px; /* Add space */
+        text-align: center;
     }
-    .feathers-display {
-        width: 80%; /* Reduce width */
-        font-size: 25px;
-        height: auto;
-        padding: 10px;
-        line-height: normal;
-    }
-    #feathers {
-        width: 100%; /* Feathers span full width */
-    }
-    #feathers i {
-        width: 200px; /* Reduce feather size */
-        height: 200px;
+
+    .search-box button {
+        width: 50%; /* Adjust button size */
+        max-width: 200px;
     }
 }
 
-@media screen and (max-width: 768px) { /* Mobile styles */
-    body {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .container {
-        margin-left: 0;
-        width: 90%;
-    }
+/* Mobile View */
+@media (max-width: 768px) { /* Phones */
     h1 {
         font-size: 2.5em;
+        text-align: center;
     }
-    .search-box {
-        flex-direction: column; /* Stack input and button */
-        width: 100%;
-    }
+
     .search-box input {
-        width: 100%;
-        font-size: 1em;
-        margin-bottom: 10px;
-    }
-    .search-box button {
-        width: 100%;
-        font-size: 1em;
-    }
-    .feathers-display {
         width: 90%;
-        font-size: 20px;
-        height: auto;
-        padding: 8px;
+        font-size: 1em;
     }
+
+    .search-box button {
+        width: 60%;
+        font-size: 1em;
+    }
+
+    .feathers-display {
+        font-size: 25px; /* Smaller text */
+        width: 90%; /* Adjust width */
+        height: auto; /* Allow dynamic height */
+        padding: 10px;
+    }
+
     #feathers {
-        width: 100%;
-        height: 100%;
-        overflow: visible;
+        width: 100%; /* Expand falling feathers */
+        left: 0;
     }
+
     #feathers i {
-        width: 150px; /* Further reduce feather size */
+        width: 150px; /* Smaller feathers */
         height: 150px;
     }
 }
