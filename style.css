@@ -151,7 +151,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1em; /* Adjust size */
+        font-size: 3em; /* Adjust size */
         white-space: nowrap; /* Allow wrapping */
         text-align: center;
         margin: 0 auto; /* Center it */
@@ -184,7 +184,7 @@ h1 {
 /* Mobile View */
 @media (max-width: 768px) { /* Phones */
     h1 {
-        font-size: 2.5em;
+        font-size: 1.5em;
         text-align: center;
     }
 
