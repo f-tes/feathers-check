@@ -151,7 +151,7 @@ h1 {
     }
 
     h1 {
-        font-size: 1.5em; /* Adjust size */
+        font-size: 1em; /* Adjust size */
         white-space: nowrap; /* Allow wrapping */
         text-align: center;
         margin: 0 auto; /* Center it */
